@@ -1,11 +1,19 @@
-#filterjs
+#smartsearch
 ##简介
-一款支持过滤器功能的轻量级模版引擎。
+智能搜索--模拟实现百度框计算机制。
+主要原理：注册一些业务组件，可以通过关键字、关键字正则表达式。每次搜索时，从注册组件的配置中，逐一匹配搜索关键字，得到要显示的组件。
 
-##依赖
-不需要依赖其他库。
-##协议
-采用[MIT 许可协议](https://github.com/houyhea/filterjs/blob/master/LICENSE)。
+
+
+1. 通过搜索框输入关键字，匹配用户感兴趣的内容。
+2. 可以搜索“车辆”、车牌号，得到车辆相关信息。
+3. 可以搜索“司机”、“司机：小红”,得到司机相关信息
+4. 可以搜索“邮编”,得到邮编查询面板
+5. 可以搜索“博客园”，获取博客园的显示。该显示演示iframe显示指定url方式。
+
+##浏览器兼容性
+兼容IE8+,chrome,firefox。
+
 ##帮助
 支付宝赞助（houyhea）：  
 ![赞助](https://raw.githubusercontent.com/houyhea/lab/master/alipayqrcode.png)

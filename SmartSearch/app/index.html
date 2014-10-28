@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>智能搜索</title>
+
+    <meta charset="UTF-8"/>
+    <script src="../lib/jquery/jquery-1.11.0.min.js"></script>
+<style>
+    body{
+        height:100%;
+        width:100%;
+
+    }
+    div{width:100%;margin:0px;padding:5px;}
+
+    .header{
+
+    }
+    .result{
+        margin-top:10px;
+        background-color: #eee;
+        height:100%;
+    }
+    .item
+    {
+        margin-top:10px;
+        border:1px solid #ccc;
+    }
+    iframe{
+        border:0px;
+        overflow: hidden;
+    }
+    .widget
+    {
+        width:350px;height:250px;border:1px solid deepskyblue;background-color: white;
+
+    }
+</style>
+
+</head>
+<body>
+<h1>智能搜索--模拟百度框计算机制</h1>
+<h3>主要原理：注册一些业务组件，可以通过关键字、关键字正则表达式。每次搜索时，从注册组件的配置中，逐一匹配搜索关键字，得到要显示的组件。</h3>
+<ul>
+    <li>通过搜索框输入关键字，匹配用户感兴趣的内容。</li>
+    <li>可以搜索“车辆”、车牌号，得到车辆相关信息。</li>
+    <li>可以搜索“司机”、“司机：小红”,得到司机相关信息</li>
+    <li>可以搜索“邮编”,得到邮编查询面板</li>
+    <li>可以搜索“博客园”，获取博客园的显示。该显示演示iframe显示指定url方式。</li>
+</ul>
+
+<div class="header"><input type="input" id="keyword"><button id="btn">搜索</button></div>
+<div class="result" id="sr"></div>
+</body>
+<script src="../lib/require/require.js" data-main="main"></script>
+</html>
